@@ -78,4 +78,4 @@ The reason for let as a solution is because:
 
 **After finished running for loop, the event loop with var will look like this:**
 <br />
-![alt text](https://github.com/aiyxudev/JavaScript-Closure/blob/master/leteventloop.png)
+![alt text](https://github.com/aiyxudev/JavaScript-Closure/blob/master/letevent.png)
