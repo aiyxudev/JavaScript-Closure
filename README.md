@@ -34,7 +34,7 @@ Let's take a look on how did I approach this code. There are three reasons for t
 
 3. **callback**<br />
 
-	`setTimeout` also created callback function, which means whatever in the `setTimeout` will be run after every thing else finished running.
+	`setTimeout(callback, delay)` also created callback function, which means whatever in the `callback` will be run after every thing else finished running.In this case, `console.log(...)` will run after for loop finish
 
 
 
@@ -79,3 +79,5 @@ The reason for let as a solution is because:
 **After finished running for loop, the event loop with var will look like this:**
 <br />
 ![alt text](https://github.com/aiyxudev/JavaScript-Closure/blob/master/letevent.png)
+
+**How event loop's stack and queue run will be the same as using var**
