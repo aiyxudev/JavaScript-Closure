@@ -37,10 +37,12 @@ Let's take a look on how did I approach this code. There are three reasons for t
 	**setTimeout** also created callback function, which means whatever in the **setTimeout** will be run after every thing else finished running.
 
 
-###### After finished running for loop, the event loop will look like this <br />
+**After finished running for loop, the event loop will look like this**
+<br />
 ![alt text](https://github.com/aiyxudev/JavaScript-Closure/blob/master/vareventloop.png)
 
-###### After the event loop is created, this is how the event loop runs the tasks stored in the stack and queue <br />
+**After the event loop is created, this is how the event loop runs the tasks stored in the stack and queue**
+<br />
 ![alt text](https://github.com/aiyxudev/JavaScript-Closure/blob/master/var.gif)
 
 
