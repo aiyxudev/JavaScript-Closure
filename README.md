@@ -81,3 +81,37 @@ The reason for let as a solution is because:
 ![alt text](https://github.com/aiyxudev/JavaScript-Closure/blob/master/letevent.png)
 
 **How event loop's stack and queue run will be the same as using var**
+
+
+# Difference between callback and closure
+
+
+> A callback that use context variable is closure
+> closure are often use as callback
+
+**callback: function passing as an argument**
+
+```JavaScript
+function doHomework(subject, callback) {
+  alert(`Starting my ${subject} homework.`);
+  callback();
+}
+function alertFinished(){
+  alert('Finished my homework');
+}
+doHomework('math', alertFinished);
+```
+
+**closure: function defined in another function**
+
+```JavaScript
+function outer() {
+   var b = 10;
+   function inner() {
+
+         var a = 20;
+         console.log(a+b);
+    }
+   return inner;
+}
+```
